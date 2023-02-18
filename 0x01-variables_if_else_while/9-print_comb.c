@@ -1,23 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main block
- * Description: prints all single number of base 10
- * starting from 0, followed by a new line
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
-int main(void)
-{
-	int c = 0;
 
-	while (c < 10)
+int main(void)
+ 	{
+	int a;
+
+	for (a = 0; a < 10; a++)
 	{
-		putchar(48 + c);
-		if (c != 9)
+		putchar(a + '0');
+		if (a < 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		c++;
-		return (0);
-}
+	}
+	putchar('\n');
+	return (0);
+	}
